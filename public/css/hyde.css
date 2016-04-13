@@ -59,14 +59,37 @@ html {
   color: rgba(255,255,255,.5);
   background-color: #202020;
 }
+
 @media (min-width: 48em) {
   .sidebar {
+    display: block;
     position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 18rem;
+    width: 30%;
+    height: 100%;
     text-align: left;
+    display: table;
+  }
+}
+
+@media (min-width: 60em) {
+  .sidebar {
+    display: block;
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    text-align: left;
+    display: table;
+  }
+}
+
+@media (min-width: 80em) {
+  .sidebar {
+    display: block;
+    position: fixed;
+    width: 20rem;
+    height: 100%;
+    text-align: left;
+    display: table;
   }
 }
 
@@ -77,6 +100,7 @@ html {
 
 /* About section */
 .sidebar-about h1 {
+  display: block;
   color: #fff;
   margin-top: 0;
   font-family: "Abril Fatface", serif;
