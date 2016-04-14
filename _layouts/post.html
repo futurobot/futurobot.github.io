@@ -4,22 +4,56 @@ layout: default
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+  {% assign m = page.date | date: "%-m" %}
+  {{ page.date | date: "%-d" }}
+  {% case m %}
+    {% when '1' %}Янв
+    {% when '2' %}Фев
+    {% when '3' %}Март
+    {% when '4' %}Апр
+    {% when '5' %}Май
+    {% when '6' %}Июнь
+    {% when '7' %}Июль
+    {% when '8' %}Авг
+    {% when '9' %}Сен
+    {% when '10' %}Окт
+    {% when '11' %}Ноя
+    {% when '12' %}Дек
+  {% endcase %}
+  <span class="post-date">{{ page.date | date: "%Y" }}</span>
   {{ content }}
 </div>
 
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+{% if site.related_posts != empty %}
+  <div class="related">
+    <h2>Недавние посты</h2>
+    <ul class="related-posts">
+      {% for post in site.related_posts limit:3 %}
+        <li>
+          <h3>
+            <a href="{{ post.url }}">
+              {{ post.title }}
+              <small>{{ post.date | date_to_string }}</small>
+            </a>
+          </h3>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        this.page.url = '{{ site.url }}{{ page.url }}';  
+        this.page.identifier = '{{ page.id }}'; 
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//futurobot.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>

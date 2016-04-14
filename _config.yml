@@ -7,9 +7,9 @@ permalink:        pretty
 
 # Setup
 title:            Futurobot
-description:      'Я разрабатываю мобильные приложени и интересуюсь вебом. Это мой блог.'
+description:      'Я разрабатываю мобильные приложения, интересуюсь вебом. Это мой блог.'
 url:              http://futurobot.ru
-baseurl:          
+baseurl:          /
 
 author:
   name:           'futurobot'
@@ -17,14 +17,12 @@ author:
 
 paginate:         5
 
-github:
-  repo:           https://github.com/futurobot/futurobot.github.io
+github:           https://github.com/futurobot/
+twitter:          https://twitter.com/the_futurobot
 
 gems:
   - jekyll-sitemap
   - jekyll-paginate
-
-twitter: '@the_futurobot'
 
 kramdown:
   # Enable GitHub Flavored Markdown (fenced code blocks)
