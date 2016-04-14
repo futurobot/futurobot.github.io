@@ -1,26 +1,29 @@
 # Dependencies
-markdown:         redcarpet
+markdown:         kramdown
 highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+title:            Futurobot
+description:      'Я разрабатываю мобильные приложения, интересуюсь вебом. Это мой блог.'
+url:              http://futurobot.ru
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'futurobot'
+  url:            https://twitter.com/the_futurobot
 
 paginate:         5
 
-# Custom vars
-version:          2.1.0
+github:           https://github.com/futurobot/
+twitter:          https://twitter.com/the_futurobot
 
-github:
-  repo:           https://github.com/poole/hyde
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+
+kramdown:
+  # Enable GitHub Flavored Markdown (fenced code blocks)
+  input: GFM
