@@ -1,6 +1,6 @@
 # Dependencies
 markdown:         kramdown
-highlighter:      pygments
+highlighter:      rouge
 
 # Permalinks
 permalink:        pretty
@@ -9,7 +9,7 @@ permalink:        pretty
 title:            Futurobot
 description:      'Я разрабатываю мобильные приложения, интересуюсь вебом. Это мой блог.'
 url:              http://futurobot.ru
-baseurl:          /
+baseurl:          
 
 author:
   name:           'futurobot'
