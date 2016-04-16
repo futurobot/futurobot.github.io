@@ -58,10 +58,10 @@ html {
   text-align: center;
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
-  background: -webkit-linear-gradient(#0288D1, #03A9F4);
-  background: -o-linear-gradient(#0288D1, #03A9F4);
-  background: -moz-linear-gradient(#0288D1, #03A9F4);
-  background: linear-gradient(#0288D1, #03A9F4);
+  background: -webkit-linear-gradient(#00838F, #00ACC1);
+  background: -o-linear-gradient(#00838F, #00ACC1);
+  background: -moz-linear-gradient(#00838F, #00ACC1);
+  background: linear-gradient(#00838F, #00ACC1);
 }
 
 @media (min-width: 48em) {

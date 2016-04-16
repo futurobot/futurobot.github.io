@@ -67,7 +67,7 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #268bd2;
+  color: #00ACC1;
   text-decoration: none;
 }
 a strong {
@@ -339,8 +339,7 @@ tbody tr:nth-child(odd) th {
 }
 
 .post > a {
-  color: rgb(0, 153, 255);
-  font-size: 0.80rem;
+  font-size: 0.90rem;
 }
 
 /* Blog post or page title */
