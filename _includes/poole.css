@@ -81,6 +81,7 @@ a:focus {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", "Roboto Condensed", Roboto, sans-serif;
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
@@ -148,15 +149,17 @@ abbr[title] {
 }
 
 /* Code */
-code,
 pre {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-family: "Roboto Mono", Menlo, Monaco, "Courier New", monospace;
+  overflow: auto;
+  padding: 1em 2.5%;
 }
 code {
+  font-family: "Roboto Mono", Menlo, Monaco, "Courier New", monospace;
   padding: .25em .5em;
-  font-size: 85%;
+  font-size: 90%;
   color: #bf616a;
-  background-color: #f9f9f9;
+  background-color: #f3f3f3;
   border-radius: 3px;
 }
 pre {
@@ -167,10 +170,10 @@ pre {
   font-size: .8rem;
   line-height: 1.4;
   white-space: pre;
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: #f9f9f9;
+  overflow: auto;
+  background-color: #EEE;
+  border: 1px solid #CCC;
+  border-radius: .4em;
 }
 pre code {
   padding: 0;
